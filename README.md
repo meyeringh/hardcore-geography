@@ -2,6 +2,27 @@
 
 Companion deck to [Ultimate Geography](https://github.com/anki-geo/ultimate-geography) adding obscure territories, islands, and additional card types for map-only entities.
 
+## Content decisions
+
+### Canals
+
+The 11 notable ship canals listed in the [Ship canal](https://en.wikipedia.org/wiki/Ship_canal) Wikipedia article, plus the Grand Canal (China) from the [transcontinental canals](https://en.wikipedia.org/wiki/List_of_transcontinental_canals) list (included as the world's longest canal and a UNESCO World Heritage Site).
+
+| Canal | Country | Length |
+|-------|---------|--------|
+| Saint Lawrence Seaway | Canada | 600 km |
+| White Sea-Baltic Canal | Russia | 227 km |
+| Suez Canal | Egypt | 193 km |
+| Rhine-Main-Danube Canal | Germany | 171 km |
+| Volga-Don Canal | Russia | 101 km |
+| Kiel Canal | Germany | 98 km |
+| Houston Ship Channel | USA | 80 km |
+| Panama Canal | Panama | 77 km |
+| Danube-Black Sea Canal | Romania | 64 km |
+| Manchester Ship Canal | UK | 58 km |
+| Welland Canal | Canada | 43 km |
+| Grand Canal | China | 1,776 km |
+
 ## Building
 
 Requires Python 3.8+ and [pipenv](https://pipenv.pypa.io/).
