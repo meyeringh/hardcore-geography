@@ -23,6 +23,25 @@ The 11 notable ship canals listed in the [Ship canal](https://en.wikipedia.org/w
 | Welland Canal | Canada | 43 km |
 | Grand Canal | China | 1,776 km |
 
+### Mountains
+
+The two highest mountains per continent (excluding Antarctica), based on the [Seven Summits](https://en.wikipedia.org/wiki/Seven_Summits) (Messner list) and [Seven Second Summits](https://en.wikipedia.org/wiki/Seven_Second_Summits) Wikipedia articles. Antarctica is excluded as its peaks are not widely known outside mountaineering.
+
+| Mountain | Continent | Elevation | Country |
+|----------|-----------|-----------|---------|
+| Mount Everest | Asia | 8,849 m | Nepal/China |
+| K2 | Asia | 8,611 m | Pakistan/China |
+| Aconcagua | South America | 6,961 m | Argentina |
+| Ojos del Salado | South America | 6,893 m | Chile/Argentina |
+| Denali | North America | 6,194 m | USA |
+| Mount Logan | North America | 5,959 m | Canada |
+| Kilimanjaro | Africa | 5,895 m | Tanzania |
+| Mount Kenya | Africa | 5,199 m | Kenya |
+| Mount Elbrus | Europe | 5,642 m | Russia |
+| Dykh-Tau | Europe | 5,205 m | Russia |
+| Puncak Jaya | Oceania | 4,884 m | Indonesia |
+| Puncak Mandala | Oceania | 4,760 m | Indonesia |
+
 ## Building
 
 Requires Python 3.8+ and [pipenv](https://pipenv.pypa.io/).
