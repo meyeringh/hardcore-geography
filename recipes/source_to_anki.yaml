@@ -22,6 +22,12 @@
   - note_model_from_yaml_part:
       part_id: Ultimate Geography [Extended]
       file: src/note_models/Ultimate_Geography_[Extended].yaml
+  - note_model_from_yaml_part:
+      part_id: Ultimate Geography [Experimental]
+      file: src/note_models/Ultimate_Geography_[Experimental].yaml
+  - note_model_from_yaml_part:
+      part_id: Ultimate Geography [Extended] [Experimental]
+      file: src/note_models/Ultimate_Geography_[Extended]_[Experimental].yaml
 
   - headers_from_yaml_part:
       - part_id: default header
@@ -480,3 +486,430 @@
     notes:
       part_id: italian
       <<: *override_nm
+
+
+- build_parts:
+  - notes_from_csvs:
+      part_id: english_experimental
+
+      note_model_mappings:
+        - note_models: &note_models_experimental
+            - Ultimate Geography [Experimental]
+          columns_to_fields:
+            <<: &experimental_columns_to_fields
+              flag: Flag
+              map: Map
+              region code: Region code
+              tags: tags
+
+            guid             : guid
+            country          : Country
+            country info     : Country info
+            capital          : Capital
+            capital info     : Capital info
+            capital hint     : Capital hint
+            flag similarity  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: &file_mappings_experimental
+        - file: src/data/main.csv
+          note_model: Ultimate Geography [Experimental]
+          derivatives:
+            - file: src/data/guid.csv
+            - file: src/data/country.csv
+            - file: src/data/country_info.csv
+            - file: src/data/capital.csv
+            - file: src/data/capital_info.csv
+            - file: src/data/capital_hint.csv
+            - file: src/data/flag_similarity.csv
+
+  - notes_from_csvs:
+      part_id: german_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:de             : guid
+            country:de          : Country
+            country info:de     : Country info
+            capital:de          : Capital
+            capital info:de     : Capital info
+            capital hint:de     : Capital hint
+            flag similarity:de  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: spanish_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:es             : guid
+            country:es          : Country
+            country info:es     : Country info
+            capital:es          : Capital
+            capital info:es     : Capital info
+            capital hint:es     : Capital hint
+            flag similarity:es  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: french_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:fr             : guid
+            country:fr          : Country
+            country info:fr     : Country info
+            capital:fr          : Capital
+            capital info:fr     : Capital info
+            capital hint:fr     : Capital hint
+            flag similarity:fr  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: norwegian_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:nb             : guid
+            country:nb          : Country
+            country info:nb     : Country info
+            capital:nb          : Capital
+            capital info:nb     : Capital info
+            capital hint:nb     : Capital hint
+            flag similarity:nb  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: czech_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:cs             : guid
+            country:cs          : Country
+            country info:cs     : Country info
+            capital:cs          : Capital
+            capital info:cs     : Capital info
+            capital hint:cs     : Capital hint
+            flag similarity:cs  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: russian_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:ru             : guid
+            country:ru          : Country
+            country info:ru     : Country info
+            capital:ru          : Capital
+            capital info:ru     : Capital info
+            capital hint:ru     : Capital hint
+            flag similarity:ru  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: dutch_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:nl             : guid
+            country:nl          : Country
+            country info:nl     : Country info
+            capital:nl          : Capital
+            capital info:nl     : Capital info
+            capital hint:nl     : Capital hint
+            flag similarity:nl  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: swedish_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:sv             : guid
+            country:sv          : Country
+            country info:sv     : Country info
+            capital:sv          : Capital
+            capital info:sv     : Capital info
+            capital hint:sv     : Capital hint
+            flag similarity:sv  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: portuguese_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:pt             : guid
+            country:pt          : Country
+            country info:pt     : Country info
+            capital:pt          : Capital
+            capital info:pt     : Capital info
+            capital hint:pt     : Capital hint
+            flag similarity:pt  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: chinese_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:zh             : guid
+            country:zh          : Country
+            country info:zh     : Country info
+            capital:zh          : Capital
+            capital info:zh     : Capital info
+            capital hint:zh     : Capital hint
+            flag similarity:zh  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: polish_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:pl             : guid
+            country:pl          : Country
+            country info:pl     : Country info
+            capital:pl          : Capital
+            capital info:pl     : Capital info
+            capital hint:pl     : Capital hint
+            flag similarity:pl  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+  - notes_from_csvs:
+      part_id: italian_experimental
+
+      note_model_mappings:
+        - note_models: *note_models_experimental
+          columns_to_fields:
+            <<: *experimental_columns_to_fields
+
+            guid:it             : guid
+            country:it          : Country
+            country info:it     : Country info
+            capital:it          : Capital
+            capital info:it     : Capital info
+            capital hint:it     : Capital hint
+            flag similarity:it  : Flag similarity
+
+          personal_fields: [ ]
+
+      file_mappings: *file_mappings_experimental
+
+- generate_crowd_anki:
+    <<: &experimental_deck
+      headers: default header
+      media:
+        parts: [all_media]
+      note_models:
+        parts:
+          - part_id: Ultimate Geography [Experimental]
+
+    folder: build/Hardcore Geography [EN] [Experimental]
+    notes:
+      part_id: english_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [DE] [Experimental]
+    notes:
+      part_id: german_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [ES] [Experimental]
+    notes:
+      part_id: spanish_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [FR] [Experimental]
+    notes:
+      part_id: french_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [NB] [Experimental]
+    notes:
+      part_id: norwegian_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [CS] [Experimental]
+    notes:
+      part_id: czech_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [RU] [Experimental]
+    notes:
+      part_id: russian_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [NL] [Experimental]
+    notes:
+      part_id: dutch_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [SV] [Experimental]
+    notes:
+      part_id: swedish_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [PT] [Experimental]
+    notes:
+      part_id: portuguese_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [ZH] [Experimental]
+    notes:
+      part_id: chinese_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [PL] [Experimental]
+    notes:
+      part_id: polish_experimental
+- generate_crowd_anki:
+    <<: *experimental_deck
+    folder: build/Hardcore Geography [IT] [Experimental]
+    notes:
+      part_id: italian_experimental
+
+- generate_crowd_anki:
+    <<: &extended_experimental_deck
+      headers: default header
+      media:
+        parts: [ all_media ]
+      note_models:
+        parts:
+          - part_id: Ultimate Geography [Extended] [Experimental]
+
+    folder: build/Hardcore Geography [EN] [Extended] [Experimental]
+    notes:
+      part_id: english_experimental
+      <<: &override_nm_experimental
+        override:
+          note_model: Ultimate Geography [Extended] [Experimental]
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [DE] [Extended] [Experimental]
+    notes:
+      part_id: german_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [ES] [Extended] [Experimental]
+    notes:
+      part_id: spanish_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [FR] [Extended] [Experimental]
+    notes:
+      part_id: french_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [NB] [Extended] [Experimental]
+    notes:
+      part_id: norwegian_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [CS] [Extended] [Experimental]
+    notes:
+      part_id: czech_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [RU] [Extended] [Experimental]
+    notes:
+      part_id: russian_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [NL] [Extended] [Experimental]
+    notes:
+      part_id: dutch_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [SV] [Extended] [Experimental]
+    notes:
+      part_id: swedish_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [PT] [Extended] [Experimental]
+    notes:
+      part_id: portuguese_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [ZH] [Extended] [Experimental]
+    notes:
+      part_id: chinese_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [PL] [Extended] [Experimental]
+    notes:
+      part_id: polish_experimental
+      <<: *override_nm_experimental
+- generate_crowd_anki:
+    <<: *extended_experimental_deck
+    folder: build/Hardcore Geography [IT] [Extended] [Experimental]
+    notes:
+      part_id: italian_experimental
+      <<: *override_nm_experimental
