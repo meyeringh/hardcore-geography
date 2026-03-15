@@ -53,6 +53,41 @@ pipenv run build
 
 Output is written to `build/` in [CrowdAnki](https://github.com/ohare93/crowd-anki) format.
 
+## Generating maps
+
+Map images are generated with `scripts/generate_map.py` to ensure a consistent style across all entries.
+
+```bash
+pip install -r scripts/requirements.txt
+```
+
+Two modes are supported:
+
+```bash
+# Mountain: red triangle marker at coordinates
+python scripts/generate_map.py mountain mount_everest \
+  --lat 27.9881 --lon 86.9250 \
+  --zoom 83 91 25 31 \
+  --overview 50 120 5 55 \
+  --inset lower-left
+
+# Canal: red route line from OpenStreetMap
+python scripts/generate_map.py canal suez_canal \
+  --osm-query 'way["name:en"="Suez Canal"]["waterway"]' \
+  --zoom 31.8 32.65 29.85 31.35 \
+  --overview 15 55 10 50 \
+  --inset lower-left
+
+# Canal with manual coordinates (when OSM has no data)
+python scripts/generate_map.py canal houston_ship_channel \
+  --coords "-94.72,29.37 -94.82,29.45 -95.32,29.76" \
+  --zoom -95.5 -94.5 29.2 30.0 \
+  --overview -110 -80 20 40 \
+  --inset upper-right
+```
+
+Run `python scripts/generate_map.py --help` for all options.
+
 ## Importing into Anki
 
 1. Install the [CrowdAnki add-on](https://ankiweb.net/shared/info/1788670778) (code: `1788670778`)
